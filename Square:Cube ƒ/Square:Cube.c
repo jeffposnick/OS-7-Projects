@@ -1,0 +1,1 @@
+#include "misc.h"#define MAX	50000void main(void);void main(void){	unsigned long	i, j, square, cube;		SetupSIOUX();		for(i=1; i <= MAX; i++)	{		square=i*i;		for(j=1; (cube=j*j*j) <= square; j++)		{			if(cube==square)				printf("%d is a square and a cube (%d and %d)\n", cube, i, j);		}	}} 

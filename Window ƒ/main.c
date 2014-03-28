@@ -1,0 +1,1 @@
+#include "misc.h"void main(void){	WindowPtr	window;	ToolboxInit();		window=GNW(128);	SetPort(window);	MoveTo(47,100);	DrawString("\pClick to quit...");		while(!Button());}
